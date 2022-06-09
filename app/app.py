@@ -15,6 +15,7 @@ def hello_world():
     return 'Hello'
 
 
+# 회원가입 시 호출
 @app.route('/api/profile', methods=['POST'])
 def detect_face_from_profile():
 
