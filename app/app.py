@@ -40,7 +40,7 @@ def detect_face_from_profile():
     out_img = io.BytesIO()
     img.save(out_img, format='png')
     out_img.seek(0)
-    s3_connection.upload_image(out_img, profile_img_url, 'profile_face')
+    s3_connection.upload_image(out_img, profile_img_url)
 
     return "얼굴 추출 및 저장 완료"
 
